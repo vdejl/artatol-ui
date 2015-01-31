@@ -14,20 +14,21 @@ ARTATOL UI
 // !!! always check for correct paths !!!
 
 // import uikit here...
+// '../../../vendor/uikit/uikit/themes/default/uikit-customizer.less';
+
+@project-path: "../components"; //replace with ../../../vendor/artatol/ui/src/less/components for artatol projects
 
 // import uikit variables (uikit 2.16)
-@import '../components/uikit-variables.less';
+@import '@{project-path}/uikit-variables.less';
 // import artatol-ui components
 
-@import '../components/general.less';
-@import '../components/flashmessage.less';
-@import '../components/background.less';
-@import '../components/text.less';
-@import '../components/error.less';
-@import '../components/menu.less';
-@import '../components/top-link.less';
-
-// Artatol project paths for import - see the project-paths.txt file and replace here!
+@import '@{project-path}/general.less';
+@import '@{project-path}/flashmessage.less';
+@import '@{project-path}/background.less';
+@import '@{project-path}/text.less';
+@import '@{project-path}/error.less';
+@import '@{project-path}/menu.less';
+@import '@{project-path}/top-link.less';
 
 /* =============================================================
 ARTATOL Less Customizer
