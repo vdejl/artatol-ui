@@ -1,0 +1,77 @@
+/* 
+Menu
+*/
+// variables:
+@main-menu-color: rgba(255,255,255,0.9);
+@mobile-menu-color: @main-menu-color;
+@menu-height: 80px;
+@menu-mobile-height: 80px;
+
+// Main menu
+.aa-main-menu {
+    height: @menu-height;
+    background: @main-menu-color;
+    z-index:900;
+    .aa-fixed-position-left;
+}
+
+// Mobile menu
+.aa-mobile-menu {
+    background: @mobile-menu-color;
+    z-index:1000;
+    .aa-fixed-position-left(@menu-mobile-height, 0px);
+}
+
+// Logo menu
+.aa-logo-menu {
+    height:35px;
+    margin-top:20px;
+    margin-left:20px;
+    .aa-absolute-top-l();
+}
+.aa-logo-menu:hover {
+    opacity:0.7;
+    cursor:pointer;
+}
+
+
+// Menu items
+.aa-menu-items {
+    .aa-absolute-top-r(40px, 20px);
+}
+
+// Page margin for menu
+.aa-menu-margin {
+    margin-top: @menu-height + 30px;
+}
+.aa-menu-margin-pure {
+    margin-top: @menu-height;
+}
+
+.aa-menu-height {
+    height:@menu-height;
+}
+
+@media (max-width: 479px) {
+    .aa-main-menu {
+        height: @menu-mobile-height;
+        background: @main-menu-color;
+        z-index:900;
+        .aa-fixed-position-left;
+    }
+    .aa-logo-menu {
+        height:40px;
+    }
+    .aa-menu-margin {
+        margin-top: @menu-mobile-height + 30px;
+    }
+    .aa-menu-margin-pure {
+        margin-top: @menu-mobile-height;
+    }
+    .aa-menu-height {
+        height:@menu-mobile-height;
+    }
+    .aa-menu-items {
+        .aa-absolute-top-r(30px, 20px);
+    }
+}

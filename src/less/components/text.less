@@ -1,0 +1,121 @@
+/*
+Text format
+*/
+//Font family
+.aa-font-family-body {
+  font-family: @font-body;
+}
+.aa-font-family-head {
+  font-family: @font-head;
+}
+
+
+//Size modifiers
+p {
+  font-size: @paragraph-text-size;
+  line-height: 1.4em;
+}
+.aa-text-base {
+  font-size: 1em;
+}
+.aa-text-p {
+  font-size: @paragraph-text-size;
+  line-height: 1.4em;
+}
+.aa-text-small {
+  font-size: 0.8em;
+}
+.aa-text-large {
+  font-size: 1.2em;
+}
+//Weight modifiers
+.aa-weight-light {
+  font-weight: @text-light;
+}
+.aa-weight-normal {
+  font-weight: @text-normal;
+}
+.aa-weight-bold {
+  font-weight: @text-bold;
+}
+.aa-weight-head-light {
+  font-weight: @head-light;
+}
+.aa-weight-head-normal {
+  font-weight: @head-normal;
+}
+.aa-weight-head-bold {
+  font-weight: @head-bold;
+}
+
+
+//Color modifiers
+.aa-color1 {
+  color: @color1;
+}
+.aa-color2 {
+  color: @color2;
+}
+.aa-color3 {
+  color: @color3;
+}
+.aa-color4 {
+  color: @color4;
+}
+.aa-color5 {
+  color: @color5;
+}
+.aa-text-color {
+  color: @text-primary-color;
+}
+.aa-text-white {
+  color: white;
+}
+
+
+/*
+Text decoration
+*/
+.aa-decoration-none,
+.aa-decoration-none:hover,
+.aa-decoration-none:focus,
+.aa-decoration-none:active {
+  text-decoration:none;
+}
+.aa-decoration-white,
+.aa-decoration-white:focus {
+  color:white !important;
+}
+.aa-decoration-color3 {
+  color: @color3;
+}
+.aa-decoration-color3:hover {
+  color: @color3-lighten;
+}
+.aa-decoration-color4 {
+  color: @color4;
+}
+.aa-decoration-color4:hover {
+  color: @color4-lighten;
+}
+
+
+// Screen modifier
+@media screen and (max-width: @breakpoint-small) {
+
+  h1 {
+    font-size: @h1 * 0.7em;
+    line-height: @head-line-height * 0.8em;
+  }
+  h2 {
+    font-size: @h2 * 0.85em;
+    line-height: @head-line-height * 0.95em;
+  }
+  h3 {
+    font-size: @h3 * 0.9em;
+  }
+  h4 {
+    font-size: @h4 * 0.95em;
+  }
+
+}

@@ -1,0 +1,133 @@
+/*
+Author: Artatol
+website: www.artatol.com
+*/
+/* 
+    Created on : Nov 23, 2014, 8:54:06 PM
+    Author     : Vlastimil Dejl, Artatol.com
+*/
+
+/* =============================================================
+ARTATOL UI
+============================================================= */
+// import uikit variables
+@import '../components/uikit-variables.less';
+// import artatol-ui components
+@import '../components/general.less';
+@import '../components/flashmessage.less';
+@import '../components/background.less';
+@import '../components/text.less';
+@import '../components/error.less';
+@import '../components/menu.less';
+@import '../components/top-link.less';
+// import project component
+@import '../components/custom.less';
+
+// Import fonts
+
+
+//
+// Color Theme (base of 2 primary colors, each in Dark and Light; Total of 4 colors)
+// color operations in less: lighten, darken, saturate, desaturate i.e. background:darken(@color, 20%);
+//
+@color1: #DB002A; // artatol red // Usage: links
+@color2: #fc4f5c; // artatol red II (lighter)
+@color2-extra-light: #fffafa;
+@color3: #444444; // artatol black // Usage: text, heading
+@color4: #666666; // artatol grey
+@color5: #dddddd; // universal grey // buttons
+@white: rgb(255,255,255); //global white
+
+@html-background-color: #ffffff;
+@body-background-color: transparent;
+
+@panel-box: #f4f4f4;
+
+
+// color operations focus/active
+@color1-lighten: lighten(@color1, 15%);
+@color1-darken: darken(@color1, 5%);
+
+@color2-lighten: lighten(@color2, 15%); //form border
+@color2-darken: darken(@color2, 5%);
+
+@color3-lighten: lighten(@color3, 10%);
+@color3-darken: darken(@color3, 5%);
+
+@color4-lighten: lighten(@color4, 5%);
+@color4-darken: darken(@color4, 5%);
+
+@color5-lighten: lighten(@color5, 5%);
+@color5-darken: darken(@color5, 5%);
+
+
+//
+// Text style
+//
+@font-body: 'Open Sans', sans-serif;
+@font-head: 'Titillium Web', sans-serif;
+@text-size: 105%;
+@paragraph-text-size: 1.2em;
+@text-line-height: 1.2em;
+@head-line-height: 1.5em;
+@text-font-weight: 300;
+@head-font-weight: 300;
+@text-primary-color: @color3;
+@text-link-color: @color1;
+@head-primary-color: @color3;
+
+@h1: 3em; // please fill in the same value (WITH em), rest is automatic
+@h2: @h1 * 0.75em;
+@h3: @h1 * 0.54em;
+@h4: @h1 * 0.44em;
+
+@text-light: 300;
+@text-normal: 400;
+@text-bold: 600;
+
+@head-light: 200;
+@head-normal: 300;
+@head-bold: 600;
+
+// -----------------------------------
+// Artatol MIXINS
+// -----------------------------------
+
+.aa-border-radius (@radius: 5px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+.aa-padding-lr (@padding:10px) {
+  padding-left: @padding;
+  padding-right: @padding;
+}
+/*
+Positioning
+*/
+.aa-fixed-position-left (@top:0px, @left:0px) {
+  position: fixed;
+  top: @top;
+  left: @left;
+}
+.aa-fixed-position-right (@top:0px, @right:0px) {
+  position: fixed;
+  top: @top;
+  right: @right;
+}
+.aa-absolute-top-l (@top:0px, @left:0px) {
+  position:absolute;
+  top: @top;
+  left: @left;
+}.aa-absolute-top-r (@top:0px, @right:0px) {
+  position:absolute;
+  top: @top;
+  right: @right;
+}
+.aa-absolute-bottom-l (@bottom:0px, @left:0px) {
+  position:absolute;
+  bottom: @bottom;
+  left: @left;
+}
+
+

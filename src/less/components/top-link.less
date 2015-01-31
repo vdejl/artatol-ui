@@ -1,0 +1,33 @@
+/*
+Top-link
+*/
+
+// top-link button - linked to js
+.aa-toplink {
+    background: @color5;
+    color: @color4;
+    padding: 5px 15px 5px 15px;
+    line-height:30px;
+    .aa-border-radius
+}
+
+.aa-toplink:hover,
+.aa-toplink:focus {
+    background: lighten(@color5, 5%);
+    color: @color3;
+    cursor: pointer;
+    text-decoration: none;
+}
+.aa-toplink:active {
+    background: darken(@color5, 5%);
+    color: @color3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.top-link {
+    position: fixed;
+    bottom: 50%;
+    right: 20px;
+    z-index:900;
+}
