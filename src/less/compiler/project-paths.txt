@@ -1,0 +1,19 @@
+// import uikit
+// project path from /less is ../../../vendor/uikit/uikit/themes/default/
+// vendor path is ../../../../../uikit/uikit/themes/default/
+@import '../../../vendor/uikit/uikit/themes/default/uikit-customizer.less';
+
+// import uikit variables (uikit 2.16)
+@import '../../../vendor/artatol/ui/src/less/components/uikit-variables.less';
+// import artatol-ui components
+// project path from /less is ../../../vendor/artatol/ui/src/less/components
+// vendor path is ../components
+@import '../../../vendor/artatol/ui/src/less/components/general.less';
+@import '../../../vendor/artatol/ui/src/less/components/flashmessage.less';
+@import '../../../vendor/artatol/ui/src/less/components/background.less';
+@import '../../../vendor/artatol/ui/src/less/components/text.less';
+@import '../../../vendor/artatol/ui/src/less/components/error.less';
+@import '../../../vendor/artatol/ui/src/less/components/menu.less';
+@import '../../../vendor/artatol/ui/src/less/components/top-link.less';
+// import custom project component
+@import '../components/custom.less';
