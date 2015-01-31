@@ -17,7 +17,3 @@
 @import '../../../vendor/artatol/ui/src/less/components/top-link.less';
 // import custom project component
 @import '../components/custom.less';
-
-// icon font paths for uikit and artatol (standard artaol project file structure)
-@icon-font-path: "../../../vendor/uikit/uikit/src/fonts";
-@aa-icon-font-path: "../../../vendor/artatol/ui/src";
