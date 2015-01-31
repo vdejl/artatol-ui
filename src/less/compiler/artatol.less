@@ -3,16 +3,21 @@ Author: Artatol
 website: www.artatol.com
 */
 /* 
-    Created on : Nov 23, 2014, 8:54:06 PM
+    Created on : Nov 23, 2014
     Author     : Vlastimil Dejl, Artatol.com
 */
 
 /* =============================================================
 ARTATOL UI
 ============================================================= */
-// import uikit variables
+
+// !!! always check for correct paths !!!
+
+// import uikit variables (uikit 2.16)
 @import '../components/uikit-variables.less';
 // import artatol-ui components
+// project path from /less is ../../../vendor/artatol/ui/src/less/components
+// vendor path is ../components
 @import '../components/general.less';
 @import '../components/flashmessage.less';
 @import '../components/background.less';
@@ -20,11 +25,12 @@ ARTATOL UI
 @import '../components/error.less';
 @import '../components/menu.less';
 @import '../components/top-link.less';
-// import project component
-@import '../components/custom.less';
+// import custom project component
+//@import '../components/custom.less';
 
-// Import fonts
-
+/* =============================================================
+ARTATOL Less Customizer
+============================================================= */
 
 //
 // Color Theme (base of 2 primary colors, each in Dark and Light; Total of 4 colors)
@@ -65,7 +71,7 @@ ARTATOL UI
 // Text style
 //
 @font-body: 'Open Sans', sans-serif;
-@font-head: 'Titillium Web', sans-serif;
+@font-head: 'Ubuntu', sans-serif;
 @text-size: 105%;
 @paragraph-text-size: 1.2em;
 @text-line-height: 1.2em;
@@ -85,9 +91,27 @@ ARTATOL UI
 @text-normal: 400;
 @text-bold: 600;
 
-@head-light: 200;
-@head-normal: 300;
-@head-bold: 600;
+@head-light: 300;
+@head-normal: 400;
+@head-bold: 500;
+
+// -----------------------------------
+// Components variables
+// -----------------------------------
+
+// Flash message
+@flash-text-color: @color1;
+@flash-background: @color2-extra-light;
+
+// General
+@page-width: 1200px;
+@page-width-2: 900px;
+
+// Menu
+@main-menu-color: rgba(255,255,255,0.9);
+@mobile-menu-color: @main-menu-color;
+@menu-height: 80px;
+@menu-mobile-height: 80px;
 
 // -----------------------------------
 // Artatol MIXINS
