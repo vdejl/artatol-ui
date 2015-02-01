@@ -1,7 +1,7 @@
 Artatol UI less
 =====================
 
-Artatol UI is a customized less extension, fine to be used with the popular [uikit](http://www.getuikit.com). The UI's main purpose is to empower artatol projects.
+Artatol UI is a customized less extension, fine to be used with the popular [uikit](http://www.getuikit.com) framework. The UI's main purpose is to empower artatol projects.
 
 ## Installing
 
