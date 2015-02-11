@@ -13,7 +13,7 @@
   ],
   "license": "MIT",
   "suggest": {
-    "uikit/uikit": "Allows to be used as a powerful front-ed framework."
+    "uikit/uikit": "Allows to be used as a powerful front-end framework."
   },
   "minimum-stability": "dev",
   "extra": {
