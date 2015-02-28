@@ -2,7 +2,7 @@
   "name": "artatol/ui",
   "type": "library",
   "description": "Artatol UI is a customized less extension, fine to be used with the popular uikit framework (getuikit.com).",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "keywords": [],
   "homepage": "https://artatol.com",
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "license": "MIT",
   "suggest": {
-    "uikit/uikit": "Allows to be used as a powerful front-ed framework."
+    "uikit/uikit": "Allows to be used as a powerful front-end framework."
   },
   "minimum-stability": "dev",
   "extra": {
