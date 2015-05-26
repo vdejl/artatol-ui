@@ -4,6 +4,7 @@ website: www.artatol.com
 */
 /* 
     Created on : Nov 23, 2014
+    Last update: May 26, 2015
     Author     : Vlastimil Dejl, Artatol.com
 */
 
@@ -92,6 +93,7 @@ ARTATOL Less Customizer
 @text-primary-color: @color3;
 @text-link-color: @color1;
 @head-primary-color: @color3;
+@color-red: #F73455;
 
 @h1: 3em; // please fill in the same value (WITH em), rest is automatic
 @h2: @h1 * 0.75em;
@@ -165,5 +167,9 @@ Positioning
   bottom: @bottom;
   left: @left;
 }
-
+.aa-absolute-bottom-r (@bottom:0px, @right:0px) {
+  position:absolute;
+  bottom: @bottom;
+  right: @right;
+}
 

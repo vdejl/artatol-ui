@@ -27,6 +27,9 @@ Positioning
 .aa-position-absolute-bottom-l {
     .aa-absolute-bottom-l;
 }
+.aa-position-absolute-bottom-r {
+    .aa-absolute-bottom-r();
+}
 .aa-position-fixed-top-l {
     .aa-fixed-position-left;
 }
@@ -82,18 +85,56 @@ HR line special
     width: 50px;
 }
 
+// Other red elements
+.aa-button-red-k {
+    background: @color-red;
+}
+.aa-button-red-k:hover {
+    background: lighten(@color-red, 10%);
+}
+.aa-button-red-k:focus,
+.aa-button-red-k:active {
+    background: darken(@color-red, 5%);
+}
+
+.aa-color-button {
+    color:white;
+    font-weight: @text-light;
+    .aa-border-radius;
+    height:1.8em !important;
+}
+.aa-color-button:hover {
+    color:white;
+    cursor:pointer;
+    background: rgba(150,150,150,0.5) !important;
+}
+.aa-color-button-red {
+    background: @color-red;
+}
+
 /*
 Elem heights
 */
-
+.aa-height-5 {
+    height: 5px;
+}
 .aa-height-10 {
     height: 10px;
+}
+.aa-height-15 {
+    height: 15px;
 }
 .aa-height-20 {
     height: 20px;
 }
+.aa-height-25 {
+    height: 25px;
+}
 .aa-height-30 {
     height: 30px;
+}
+.aa-height-35 {
+    height: 35px;
 }
 .aa-height-40 {
     height: 40px;

@@ -28,6 +28,24 @@ p,
 .aa-text-large {
   font-size: 1.2em;
 }
+
+[class*='aa-text-h'] {
+  font-family: @font-head;
+  font-weight: @head-font-weight;
+}
+.aa-text-h1-like {
+  font-size: @h1;
+}
+.aa-text-h2-like {
+  font-size: @h2;
+}
+.aa-text-h3-like {
+  font-size: @h3;
+}
+.aa-text-h4-like {
+  font-size: @h4;
+}
+
 //Weight modifiers
 .aa-weight-light {
   font-weight: @text-light;
@@ -71,6 +89,9 @@ p,
 .aa-text-white {
   color: white;
 }
+.aa-text-red {
+  color: @color-red;
+}
 
 
 /*
@@ -98,6 +119,51 @@ Text decoration
 .aa-decoration-color4:hover {
   color: @color4-lighten;
 }
+.aa-decoration-red {
+  color: @color-red;
+}
+.aa-decoration-red:hover,
+.aa-decoration-red:focus {
+  color: @color-red;
+}
+.aa-decoration-text {
+  color: @text-primary-color;
+}
+.aa-decoration-text:hover,
+.aa-decoration-text:focus {
+  color: @color1;
+}
+
+//head decoration
+.aa-decoration-head {
+  color: @head-primary-color;
+}
+.aa-decoration-head:hover, .aa-decoration-head:focus, .aa-decoration-head:active {
+  color: @color1;
+}
+
+// padding styles
+.aa-padding-10 {
+  padding:10px;
+}
+.aa-padding-lr-10 {
+  padding: 0px 10px;
+}
+.aa-padding-lr-30 {
+  padding: 0px 30px;
+}
+.aa-padding-top-3 {
+  padding-top:3px;
+}
+.aa-padding-top-5 {
+  padding-top: 5px;
+}
+.aa-padding-top-7 {
+  padding-top:7px;
+}
+
+
+
 
 
 // Screen modifier
