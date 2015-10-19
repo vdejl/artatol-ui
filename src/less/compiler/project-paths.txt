@@ -10,9 +10,10 @@
 @import '../../vendor/artatol/ui/src/less/components/general.less';
 @import '../../vendor/artatol/ui/src/less/components/flashmessage.less';
 @import '../../vendor/artatol/ui/src/less/components/background.less';
+@import '../../vendor/artatol/ui/src/less/components/images.less';
 @import '../../vendor/artatol/ui/src/less/components/text.less';
 @import '../../vendor/artatol/ui/src/less/components/error.less';
 @import '../../vendor/artatol/ui/src/less/components/menu.less';
 @import '../../vendor/artatol/ui/src/less/components/top-link.less';
 // import custom project component
-@import '/components/custom.less';
+@import '/custom.less';
